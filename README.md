@@ -45,3 +45,6 @@ P.S. AMAZING!
 ### Staged files
 `git reset HEAD [file-name]`  
 `git checkout [file-name]`  
+
+## Revert to a specific commit
+`git revert [commit-hash]`  
