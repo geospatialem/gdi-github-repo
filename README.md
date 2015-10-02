@@ -1,14 +1,16 @@
 # 'Git' from Girl Develop It, Minneapolis, [Slides](http://amlyhamm.com/gdi/fall_in_love_with_git)
 
 ## Version Control
+
+### Benefits
 * Collaborate
 * Track Changes
 
-## Types of Version Control
+### Types
 * Centralized
 * Distributed (e.g. GitHub)
 
-## Version Control Vocabulary
+## Vocabulary
 * Repo: project folder (Git leprechauns)
 * Clone: A copy of the Repo
 * Commit: Change to the file(s), saving it/them.
