@@ -11,11 +11,11 @@
 * Distributed (e.g. GitHub)
 
 ## Vocabulary
-* Repo: project folder (Git leprechauns)
-* Clone: A copy of the Repo
-* Commit: Change to the file(s), saving it/them.
-* Git: A program to track your Changes
-* Hashed commit: Unique IDs for commits (GitHub does this)
+* **Repo**: project folder (Git leprechauns)
+* **Clone**: A copy of the Repo
+* **Commit**: Change to the file(s), saving it/them.
+* **Git**: A program to track your Changes
+* **Hashed commit**: Unique IDs for commits (GitHub does this)
 
 ## SSH Keys
 Like a fingerprint, adds extra security to your GitHub account
@@ -48,7 +48,7 @@ P.S. AMAZING!
 `git reset HEAD [file-name]`  
 `git checkout [file-name]`  
 
-## Revert to a specific commit
+### Revert to a specific commit
 `git revert [commit-hash]`  
 
 ## Branches
