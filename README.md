@@ -1,71 +1,106 @@
 # 'Git' from Girl Develop It, Minneapolis, [Slides](http://amlyhamm.com/gdi/fall_in_love_with_git)
 
-## Version Control
+## Vocabulary
+* **_Repo_**: project folder (Git leprechauns).
+* **_Clone_**: A copy of the Repo.
+* **_Git_**: A program to track your Changes.
+* **_Hashed commit_**: Unique IDs for commits (GitHub does this).
+* **_Add_**: Add a file, or files, to the repository to be tracked.
+* **_Stage_**: Tell Git to track the current state of the file.
+* **_Commit_**: Saves the changes made to a file, not the file as a whole. The commit will have a "hash" so we can track which changes were committed when and by whom.
+* **_Branch_**: A parallel version of a repo.
+* **_Master_**: Default branch name on GitHub.
+* **_Remote_**: Version of a repo on GitHub.
+* **_Fetch_**: Get the latest changes from an online repo without merging.
+* **_Pull_**: Fetch and merge from the remote repo.
+* **_Push_**: Send commits to the remote repo.
+* **_Fork_**: A personal copy of another user's repo.
+* **_Pull Request_**: Push your local changes to another user's repo, in hopes they will pull your code request to their repo to benefit others!
+* **_Touch_**: Creates a new file (e.g. `touch .gitignore`).
+* **_SSH Keys_**: Like a fingerprint, adds extra security to your GitHub account.
 
-### Benefits
-* Collaborate
-* Track Changes
+## Shortcuts
+* Hit the `^` arrow to get the last run command in Terminal.
+* Click `Tab` to finish the word/phrase you are typing.
+
+### Tidbit
+When you run into  `VIM` (text editor), do the following (also noted in [this StackOverflow message](http://stackoverflow.com/questions/14046122/github-locks-up-mac-terminal-when-using-pull-command)):
+1. Press `i`, a.k.a. insert, to insert the necessary message.
+2. Enter in the message necessary (no quotes, straight up text here is legitimite).
+3. Press `esc` to get to the prompt and then one of the following:  
+a. `Shift` + `Z` + `Z`, or  
+b. `:wq` (which is 1970's technology that means `w`: write, `q`: quit)
+
+## Version Control
+Benefits include: collaborative environment, and the ability to track changes over time (esp. with groups of people)!
 
 ### Types
 * Centralized
 * Distributed (e.g. GitHub)
 
-## Vocabulary
-* **Repo**: project folder (Git leprechauns)
-* **Clone**: A copy of the Repo
-* **Commit**: Change to the file(s), saving it/them.
-* **Git**: A program to track your Changes
-* **Hashed commit**: Unique IDs for commits (GitHub does this)
-
-## SSH Keys
-Like a fingerprint, adds extra security to your GitHub account
-
-## Shortcuts
-* Up arrow to get the last command
-* Tab to finish the phrase
-
 ## How To Make a Repo
 
 ### 1. Create a Repo
-`mkdir [repo-name]`  
-`cd [repo-name]`  
+To create a repo straight on GitHub, use the web tools to create one. There is a download option that can make repos with the command line named Hub. Check it out to learn more.
+
+To create a repo on you desktop, without first making one on the web browser, run the following commands in Terminal:  
+`mkdir [repo-name-here]`  
+`cd [repo-name-here]`  
 
 ### 2. Initialize
 `git init`  
 `git status`  
 
 ### 3. Add a new file
-`git add [file-name.ext]`  
+`git add [file-name-here.ext]`  
 
 ## Undo Your Changes
 Nobody's perfect. Sometimes you'll want to "undo" or "revert" some changes you've made.
-P.S. AMAZING!
+
+P.S. **_AMAZING!_** Also, check out some awesome tweets that Nathan sent out! (e.g. [Git Alias'](https://git-scm.com/book/en/v2/Git-Basics-Git-Aliases))
 
 ### Unstaged files
-`git checkout [file-name]`  
+`git checkout [file-name-here]`  
 
 ### Staged files
-`git reset HEAD [file-name]`  
-`git checkout [file-name]`  
+`git reset HEAD [file-name-here]`  
+`git checkout [file-name-here]`  
 
 ### Revert to a specific commit
-`git revert [commit-hash]`  
+Copy from Terminal and/or GitHub website:  
+`git revert [commit-hash-here]`  
 
 ## Branches
-A parallel version of a repo. `Master` is GitHub's default branch. **A branch is a new ending to a novel.**
-* Same repo, different branch
-* `Master` branch is left alone
-* Use a branch when you are ready
+A parallel version of a repo. `master` is GitHub's default branch. **A branch is a new ending to a novel.** Also, think of branches like components of a tree, like a tree branch!  
+1. Same repo, with hopes of adding a new story in.  
+2. `master` branch is left alone when doing large changes. Changes are normally merged into the `master` when completed.
+* Merge in a branch when you are ready, and verified it works (usually back to the `master` branch).
 
 ### Create a Branch
 `git checkout -b`  
 `git status` will tell you the branch that you are in.
 
 ### Switch Branches
-`git branch`: see all branches in the repo
-`git checkout master`: checkout the `master` branch
+`git branch`: See all branches in the repo.   
+`git checkout master`: Checkout the `master` branch.  
 
 ### Delete a Branch
-`git branch -d [branch-name]`
+`git branch -d [branch-name-here]`
 
-## Merge a Branch
+### Merge a Branch
+a.k.a. collaboration at its best!
+
+1. **Checkout the Branch** `git checkout master`. The branch you checkout will be the one you will be merging your changes to.
+
+2. **Merge a Different Branch**: `git merge [branch-name-here]`. The branch you merge is what will be added to the branch you have checked out! **_WOOT!_** P.S. `git rebase` also works, but was not covered during our session.
+
+### Branch Conflicts
+Git will make you resolve conflicts before merging. When you try and run a merge and run into conflicts your file will change to show you the conflicts in your file(s). From here, edit them as you wish for them to appear. Then use `git commit -m '[your message goes here]'` to commit the changes. **_Hooray!_**
+
+## Fork/Forking
+Use/Contribute to a repo owned by someone else. Forking creates a personal copy in your account of someone else's repo. A fork makes it easy for you to modify the code, and for contributions, if the owner chooses to accept your changes.
+
+## Pull Requests
+After forking and cloning, any changes you push will go to **your local repo** (not the original repo you forked). However, you can contribute back to the original repo by submitting a pull request to the owner.
+
+There is also a way for you to commit your changes **and** submit a pull request simultaneously using some awesome Git commands. Check out the GitHub Help section for more information on this awesomeness.
