@@ -50,3 +50,20 @@ P.S. AMAZING!
 `git revert [commit-hash]`  
 
 ## Branches
+A parallel version of a repo. `Master` is GitHub's default branch. **A branch is a new ending to a novel.**
+* Same repo, different branch
+* `Master` branch is left alone
+* Use a branch when you are ready
+
+### Create a Branch
+`git checkout -b`  
+`git status` will tell you the branch that you are in.
+
+### Switch Branches
+`git branch`: see all branches in the repo
+`git checkout master`: checkout the `master` branch
+
+### Delete a Branch
+`git branch -d [branch-name]`
+
+## Merge a Branch
