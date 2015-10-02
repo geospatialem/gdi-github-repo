@@ -34,3 +34,14 @@ Like a fingerprint, adds extra security to your GitHub account
 
 ### 3. Add a new file
 `git add [file-name.ext]`  
+
+## Undo Your Changes
+Nobody's perfect. Sometimes you'll want to "undo" or "revert" some changes you've made.
+P.S. AMAZING!
+
+### Unstaged files
+`git checkout [file-name]`  
+
+### Staged files
+`git reset HEAD [file-name]`  
+`git checkout [file-name]`  
