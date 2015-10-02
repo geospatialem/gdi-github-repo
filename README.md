@@ -48,3 +48,5 @@ P.S. AMAZING!
 
 ## Revert to a specific commit
 `git revert [commit-hash]`  
+
+## Branches
