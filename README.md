@@ -1,4 +1,4 @@
-# Git from Girl Develop It, Minneapolis, [Slides](http://amlyhamm.com/gdi/fall_in_love_with_git)
+# Gir from Girl Develop It, Minneapolis, [Slides](http://amlyhamm.com/gdi/fall_in_love_with_git)
 
 ## Version Control
 * Collaborate
