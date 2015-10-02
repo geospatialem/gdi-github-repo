@@ -24,12 +24,12 @@
 * Click `Tab` to finish the word/phrase you are typing.
 
 ### Tidbit
-When you run into  `VIM` (text editor), do the following (also noted in [this StackOverflow message](http://stackoverflow.com/questions/14046122/github-locks-up-mac-terminal-when-using-pull-command)):
-1. Press `i`, a.k.a. insert, to insert the necessary message.
-2. Enter in the message necessary (no quotes, straight up text here is legitimite).
+When you run into  `VIM` (text editor), do the following (also noted in [this StackOverflow message](http://stackoverflow.com/questions/14046122/github-locks-up-mac-terminal-when-using-pull-command)):  
+1. Press `i`, a.k.a. insert, to insert the necessary message.  
+2. Enter in the message necessary (no quotes, straight up text here is legitimite).  
 3. Press `esc` to get to the prompt and then one of the following:  
 a. `Shift` + `Z` + `Z`, or  
-b. `:wq` (which is 1970's technology that means `w`: write, `q`: quit)
+b. `:wq` (which is 1970's technology that means `w`: write, `q`: quit).  
 
 ## Version Control
 Benefits include: collaborative environment, and the ability to track changes over time (esp. with groups of people)!
@@ -44,6 +44,7 @@ Benefits include: collaborative environment, and the ability to track changes ov
 To create a repo straight on GitHub, use the web tools to create one. There is a download option that can make repos with the command line named Hub. Check it out to learn more.
 
 To create a repo on you desktop, without first making one on the web browser, run the following commands in Terminal:  
+
 `mkdir [repo-name-here]`  
 `cd [repo-name-here]`  
 
@@ -57,7 +58,9 @@ To create a repo on you desktop, without first making one on the web browser, ru
 ## Undo Your Changes
 Nobody's perfect. Sometimes you'll want to "undo" or "revert" some changes you've made.
 
-P.S. **_AMAZING!_** Also, check out some awesome tweets that Nathan sent out! (e.g. [Git Alias'](https://git-scm.com/book/en/v2/Git-Basics-Git-Aliases))
+Also, check out some awesome tweets that Nathan sent out! (e.g. [Git Alias'](https://git-scm.com/book/en/v2/Git-Basics-Git-Aliases))
+
+P.S. **_AMAZING!_**
 
 ### Unstaged files
 `git checkout [file-name-here]`  
@@ -67,14 +70,15 @@ P.S. **_AMAZING!_** Also, check out some awesome tweets that Nathan sent out! (e
 `git checkout [file-name-here]`  
 
 ### Revert to a specific commit
-Copy from Terminal and/or GitHub website:  
+Copy from Terminal and/or GitHub website, then run the following in Terminal:  
 `git revert [commit-hash-here]`  
 
 ## Branches
 A parallel version of a repo. `master` is GitHub's default branch. **A branch is a new ending to a novel.** Also, think of branches like components of a tree, like a tree branch!  
+
 1. Same repo, with hopes of adding a new story in.  
 2. `master` branch is left alone when doing large changes. Changes are normally merged into the `master` when completed.
-* Merge in a branch when you are ready, and verified it works (usually back to the `master` branch).
+3. Merge in a branch when you are ready, and after you have verified it works (usually back to the `master` branch).
 
 ### Create a Branch
 `git checkout -b`  
